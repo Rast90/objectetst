@@ -1,0 +1,55 @@
+
+class Animation
+  fields:
+    name:
+  methods:
+    animate
+
+class Attack
+  fields:
+    animation: Animation
+    strength: 
+
+class Weapon
+  fields:
+    name: string
+    damage
+    range
+    attack_animation: Animation
+
+class Character
+  fields:
+    name
+    health
+
+------------------------------
+class Anim2klatki (Animation)
+  fields:
+    klatka1:
+    klatka2:
+    klatka2_przesuniecie_x: int
+
+class Anim_pocisk (Animation)
+  fields:
+    klatka1_wystrzał:
+    klatka2_trafienie: 
+    obraz_pocisku: 
+    pocisk_przesuniecie_x:int
+
+object animacja_dla_noza Anim2klatki
+  klatka1 = "obrazek1.jpg"
+  klatka2 = "obrazek2.jpg"
+  klatka2_przesuniecie_x = 12;
+
+object animacja_dla_broni_palnej Anim2_pocisk
+  klatka1_wystrzał = "wystrzał1.jpg"
+  klatka2_trafienie = "trafienie1.jpg"
+  obraz_pocisku = "pocisku.jpg"
+  pocisk_przesuniecie_x = 5; 
+  klatka2_przesuniecie_x = 200;  
+
+objct nóż("nóż myśliwski", 2, 1, animacja_dla_noza);
+
+objct karabin("Ak-47", 50, 200, animacja_dla_broni_palnej);
+
+

@@ -1,0 +1,60 @@
+klasy:
+---
+człowiek
+
+typ_człowieka
+
+artysta
+ method:
+   malowanie_obrazu...
+ 
+inżynier
+ methods:
+   naprawianie_komputera
+
+
+rodzic
+
+dziecko
+
+
+
+człowiek (artysta)
+
+człowiek (inżynier) 
+
+praworęczność
+
+obiekty:
+-----
+asia: człowiek (typ_człowieka=artysta, praworęczność=tak) 
+ method:
+   wiązanie_butów
+marek: człowiek (typ_człowieka=inżynier, praworęczność=nie)
+ method:
+    wiązanie_butów
+
+rodzic1: asia
+rodzic2: marek
+
+rodzic + rodzic  ->  dziecko
+
+pawełek: dziecko
+
+pawełek (asia, marek)  (30% artysta, 30% inżynier, 40%  ....)
+  method:
+    wiązanie_butów
+        begin
+          #inherited asia.wiązanie_butów 
+          #inherited marek.wiązanie_butów 
+          "zrób 2 supły"
+        end
+    praca_dorywcza
+      begin
+        // praca1
+        inherited asia.artysta.malowanie_obrazu
+        // praca2
+        inherited marek.inżynier.naprawianie_komputera             
+      end
+
+inherited methods
