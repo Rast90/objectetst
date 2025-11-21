@@ -12,11 +12,13 @@ class Weapon {
 public:
     string name;
     int damage;
+    int range;
 
     // Konstruktor - ustawia początkowe wartości
-    Weapon(string n, int d) {
-        name = n;
-        damage = d;
+    Weapon(string aname, int adamage, int arange) {
+        name = aname;
+        damage = adamage;
+        range = arange;
     }
 
     // Metoda do wyświetlania statystyk broni
@@ -76,8 +78,9 @@ public:
 // ---------------------------------------------------------
 int main() {
     // 1. Tworzenie obiektów klasy Weapon
-    Weapon sword("Excalibur", 25);
-    Weapon axe("Topór Wikinga", 40);
+    Weapon sword("Excalibur", 25, 1);
+    Weapon axe("Topór Wikinga", 40, 2);
+    Weapon karabin("AK-47", 200, 10);
 
     // 2. Tworzenie obiektów klasy Character
     Character hero("Wiedzmin", 100);
