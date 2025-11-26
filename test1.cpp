@@ -10,7 +10,7 @@ using namespace std;
 // ---------------------------------------------------------
 class Weapon {
 public:
-    string name;
+    string name; // cot to?
     int damage;
     int range;
 
