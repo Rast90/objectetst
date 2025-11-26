@@ -1,0 +1,61 @@
+1. Obiekty
+
+zapisane w { }
+
+zawierają pary klucz : wartość
+
+{
+  "nazwa": "plik.txt",
+  "rozmiar": 120
+}
+
+2. Tablice
+
+zapisane w [ ]
+
+zawierają listę elementów (wartości)
+
+{
+  "pliki": ["index.html", "style.css", "main.js"]
+}
+
+3. Klucze (keys)
+
+zawsze są napisami (stringami)
+
+zapisane w cudzysłowach " "
+
+"nazwa": "projekt"
+
+4. Wartości (values)
+
+Mogą być typu:
+
+Typ	Przykład
+String (tekst)	"hello"
+Number (liczba)	10, 3.14
+Boolean	true, false
+Null	null
+Object	{ "x": 1 }
+Array	[1, 2, 3]
+5. Separator przecinkiem
+
+Oddziela elementy w obiektach i tablicach.
+
+📁 Przykład JSON opisującego strukturę pliku / folderu:
+{
+  "name": "projekt",
+  "type": "folder",
+  "children": [
+    {
+      "name": "main.cpp",
+      "type": "file",
+      "size": 2048
+    },
+    {
+      "name": "src",
+      "type": "folder",
+      "children": []
+    }
+  ]
+}

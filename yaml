@@ -1,0 +1,53 @@
+1. Klucze i wartości
+
+zapis klucz : wartość
+
+nazwa: projekt
+rozmiar: 120
+
+2. Wcięcia (indentacja)
+
+służą do określania struktury
+
+zwykle 2 spacje, nigdy tabulacja
+
+projekt:
+  typ: folder
+  autor: Jan
+
+3. Listy (tablice)
+
+zapisujemy za pomocą -
+
+pliki:
+  - index.html
+  - style.css
+  - main.js
+
+4. Obiekty (zagnieżdżenie)
+plik:
+  nazwa: data.json
+  typ: file
+  rozmiar: 2 KB
+
+5. Typy danych
+Typ	Przykład
+String	"tekst" lub tekst bez cudzysłowu
+Number	10, 3.14
+Boolean	true, false
+Null	null lub ~
+Tablica	- element
+Obiekt	zagnieżdżenia
+📁 Przykład struktury plików w YAML
+
+(JSON → YAML porównanie)
+
+
+
+YAML
+name: projekt
+type: folder
+children:
+  - name: main.cpp
+    type: file
+    size: 2048

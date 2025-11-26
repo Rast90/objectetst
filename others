@@ -1,0 +1,17 @@
+RS-232 (Recommended Standard 232) to standard komunikacji szeregowej,
+ używany do przesyłania danych między urządzeniami,
+  np. komputerem a mikrokontrolerem, modemem, PLC, czujnikami przemysłowymi itp.
+
+RS-485 to standard komunikacji szeregowej stosowany głównie w przemyśle,
+ automatyce, systemach alarmowych, inteligentnych budynkach, sterownikach PLC,
+  czujnikach itp. Umożliwia komunikację wielu urządzeń w jednej magistrali
+   na duże odległości.
+
+Modbus to popularny protokół komunikacyjny wykorzystywany w automatyce przemysłowej.
+ Umożliwia wymianę danych pomiędzy urządzeniami typu Master (nadrzędny) i Slave (podrzędne). Najczęściej działa na RS485 (Modbus RTU), ale może też działać po Ethernecie (Modbus TCP).
+
+Docker to platforma do tworzenia, uruchamiania i zarządzania aplikacjami w kontenerach.
+Kontener to lekka, izolowana paczka zawierająca aplikację i wszystko, czego potrzebuje do działania (biblioteki, zależności, system runtime).
+Dzięki temu aplikacja działa tak samo na każdym komputerze — niezależnie od systemu.
+
+docker run --rm -p 6052:6052 -v "${PWD}:/esphomeconfig" -it ghcr.io/esphome/esphome
